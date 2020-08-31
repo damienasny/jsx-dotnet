@@ -4,7 +4,9 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build": "rimraf wwwroot/dist && webpack"
+    "build": "rimraf wwwroot/dist && webpack",
+    "start": "dotnet run",
+    "develop": "dotnet watch run"
   },
   "dependencies": {
     "emotion": "^9.2.12",

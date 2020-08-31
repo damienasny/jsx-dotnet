@@ -37,6 +37,9 @@ class Navbar extends Component {
 				<li>
 					<Link to="/lazy-load">Lazy loading demo</Link>
 				</li>
+				<li>
+					<a href="/contact">Contact</a>
+				</li>
 			</ul>
 		);
 	}
@@ -57,6 +60,8 @@ class HomePage extends Component {
 
 export default class HomeComponent extends Component {
 	render() {
+		console.log(this.props)
+
 		const app = (
 			<div className="container">
 				<div className="jumbotron">

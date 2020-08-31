@@ -14,7 +14,7 @@ The repo aims to start working with JSX and ASP .NET Core easily. We are using [
  - [ ] Run Preact with .NET Core
  - [ ] Setup Storybook
  - [ ] Setup TypeScript
- - [ ] Setup server-side rendering
+ - [x] Setup server-side rendering
  - [ ] Setup deploy sample
  - [ ] Setup environment variables sample
 

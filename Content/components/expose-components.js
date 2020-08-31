@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import ReactDOMServer from 'react-dom/server';
 
 import RootComponent from './home.jsx';
+import { ContactPage } from './contact.jsx';
 import { ServerStyleSheet } from 'styled-components';
 import { JssProvider, SheetsRegistry } from 'react-jss';
 import { renderStylesToString } from 'emotion-server';
@@ -18,3 +19,6 @@ global.EmotionServer = { renderStylesToString };
 global.Helmet = Helmet;
 
 global.Components = { RootComponent };
+
+global.HomePage = RootComponent;
+global.ContactPage = ContactPage;

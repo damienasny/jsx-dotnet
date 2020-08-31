@@ -1,7 +1,7 @@
 @using React.AspNet
 @using React.RenderFunctions
 @using React.Router
-@model React.Sample.Webpack.CoreMvc.Controllers.HomeController.IndexViewModel
+@model React.Sample.Webpack.CoreMvc.Controllers.ContactController.IndexViewModel
 
 @{
 	Layout = "_Layout";
@@ -12,7 +12,7 @@
 
 	var chainedFunctions = new ChainedRenderFunctions(emotionFunctions, styledComponentsFunctions, reactJssFunctions, helmetFunctions);
 }
-@Html.React("HomePage", new { initialComments = Model.Comments, page = Model.Page }, renderFunctions: chainedFunctions)
+@Html.React("ContactPage", new { counter = Model.Counter }, renderFunctions: chainedFunctions)
 @{
 	ViewBag.ServerStyles = styledComponentsFunctions.RenderedStyles + reactJssFunctions.RenderedStyles;
 	ViewBag.HelmetTitle = helmetFunctions.RenderedHelmet?.GetValueOrDefault("title");
