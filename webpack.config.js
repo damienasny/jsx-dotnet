@@ -2,7 +2,7 @@ const path = require('path');
 const ManifestPlugin = require('webpack-manifest-plugin');
 
 module.exports = {
-	entry: './Content/components/expose-components.js',
+	entry: './Frontend/src/templates/expose-components.js',
 	output: {
 		filename: '[name].[contenthash:8].js',
 		globalObject: 'this',
@@ -27,7 +27,7 @@ module.exports = {
 	module: {
 		rules: [
 			{
-				test: /\.jsx?$/,
+				test: /\.js(x)?$/,
 				exclude: /node_modules/,
 				loader: 'babel-loader',
 			},
