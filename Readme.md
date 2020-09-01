@@ -20,8 +20,8 @@ The repo aims to start working with JSX and ASP .NET Core easily. We are using [
 
  - [x] Run React.js with .NET Core
  - [x] Run Preact with .NET Core
- - [ ] Setup Scaffold
- - [ ] Setup Storybook
+ - [x] Setup Scaffold
+ - [x] Setup Storybook
  - [ ] Setup TypeScript
  - [x] Setup server-side rendering
  - [ ] Setup deploy sample

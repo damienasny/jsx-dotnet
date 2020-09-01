@@ -8,7 +8,6 @@ import Helmet from 'react-helmet';
 
 import * as Components from "./components";
 import { Pages } from "./pages";
-import '../js';
 
 global.React = React;
 global.Preact = Preact;
