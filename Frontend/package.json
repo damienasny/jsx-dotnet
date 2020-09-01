@@ -74,6 +74,7 @@
     "@microsoft/applicationinsights-web": "^2.2.4",
     "es6-object-assign": "^1.1.0",
     "picturefill": "^3.0.3",
-    "promise-polyfill": "^8.1.0"
+    "promise-polyfill": "^8.1.0",
+    "react": "^16.13.1"
   }
 }

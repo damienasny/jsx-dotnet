@@ -10,6 +10,26 @@ module.exports = {
 		publicPath: '/dist/'
 	},
 	mode: process.env.NODE_ENV === 'production' ? 'production' : 'development',
+	module: {
+		rules: [
+			{
+				test: /\.js$/,
+				exclude: /node_modules/,
+				use: {
+					loader: 'babel-loader',
+					options: {
+						presets: ['@babel/preset-env', '@babel/preset-react'],
+						plugins: [
+							"@babel/proposal-object-rest-spread",
+							"@babel/plugin-syntax-dynamic-import",
+							"@babel/proposal-class-properties"
+						]
+					}			  
+				}
+			},
+		],
+	},
+	devtool: 'cheap-module-eval-source-map',
 	optimization: {
 		runtimeChunk: {
 			name: 'runtime', // necessary when using multiple entrypoints on the same page
@@ -23,15 +43,6 @@ module.exports = {
 				},
 			},
 		},
-	},
-	module: {
-		rules: [
-			{
-				test: /\.js(x)?$/,
-				exclude: /node_modules/,
-				loader: 'babel-loader',
-			},
-		],
 	},
 	plugins: [
 		new ManifestPlugin({
